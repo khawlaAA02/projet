@@ -1,0 +1,25 @@
+
+.gallery {
+    display: flex;
+}
+
+.gallery img {
+    margin: 10px;
+    cursor: pointer;
+}
+
+.preview {
+    text-align: center;
+}
+
+.preview img {
+    max-width: 300px;
+    display: none;
+}
+
+.preview p {
+    font-weight: bold;
+}
+
+
+
