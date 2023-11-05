@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="test.css">
+</head>
+<body>
+    <div class="gallery">
+        <img src="image1.jpg" alt="Image 1" onmouseover="showImage('image1.jpg', 'Image 1')" onmouseout="resetImage()">
+        <img src="image2.jpg" alt="Image 2" onmouseover="showImage('image2.jpg', 'Image 2')" onmouseout="resetImage()">
+    </div>
+    <div class="preview">
+        <img id="preview-image" src="" alt="">
+        <p id="preview-text">Hover over an image below to display here.</p>
+    </div>
+    <script>
+
+function showImage(src, alt) {
+    var previewImage = document.getElementById('preview-image');
+    var previewText = document.getElementById('preview-text');
+
+    previewImage.src = src;
+    previewImage.style.display = 'block';
+    previewText.innerText = alt;
+}
+
+function resetImage() {
+    var previewImage = document.getElementById('preview-image');
+    var previewText = document.getElementById('preview-text');
+
+    previewImage.style.display = 'none';
+    previewText.innerText = 'Hover over an image below to display here.';
+}
+
+
+    </script>
+
+
+</body>
+</html>
